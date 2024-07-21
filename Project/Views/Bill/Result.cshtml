@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Project.Models.Bill>
+
+@{
+    ViewData["Title"] = "Result";
+}
+
+<h1>All Report Items</h1>
+
+@if (Model == null || !Model.Any())
+{
+    <p>No orders placed yet.</p>
+}
+else
+{
+    <div class="col-md-4">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.CustomerName)
+                    </th>
+                    <th>
+                        Total Spent
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CustomerName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.GrandTotal)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}

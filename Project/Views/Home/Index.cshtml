@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Bill Generator</h1>
+
+<div class="text-center mt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 center">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">1. Add Menu Item</h5>
+                        <p class="card-text">Add/Update Menu Items</p>
+			            <a class="btn btn-primary" asp-action="Index" asp-controller="Menu">Go</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 center">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">2. Generate Bill</h5>
+                        <p class="card-text">Generate Bill per table</p>
+			            <a class="btn btn-primary" asp-action="Create" asp-controller="Bill">Go</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-6 center mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">3. View Report</h5>
+                        <p class="card-text">See all Sales</p>
+			            <a class="btn btn-primary" asp-action="Result" asp-controller="Bill">Go</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
