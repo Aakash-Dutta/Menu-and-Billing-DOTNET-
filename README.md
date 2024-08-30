@@ -3,7 +3,7 @@
 
  ## Setup Instructions
 
- ### 1. Configure Cnnection String
+ ### 1. Configure Connection String
  1. Locate the `appsettings.json` file in project directory.
  2. Open `appsettings.json` and find the  `ConnectionStrings` section.
    
